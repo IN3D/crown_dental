@@ -3,3 +3,6 @@
 
 # ignore codekit config file
 config.codekit
+
+# ignore the sass cache
+assets/sass/.sass-cache/

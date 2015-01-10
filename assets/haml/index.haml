@@ -1,0 +1,29 @@
+%html{'ng-app' => 'main'}
+  %head
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'bower_components/bootstrap/dist/css/bootstrap.min.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'assets/css/main.css'}
+    %script{:type => 'text/javascript', :src => 'bower_components/angular/angular.min.js'}
+    %script{:type => 'text/javascript', :src => 'assets/js/main.js'}
+    %script{:type => 'text/javascript', :src => 'assets/js/directives.js'}
+
+  %body{'ng-controller' => 'MainController as main'}
+    %div{:class => 'container full-height'}
+      %div{:class => 'col-xs-12 col-sm-10 col-md-8 col-center'}
+        %div{:class => 'row centered-pills'}
+          %ul{:class => 'nav nav-pills'}
+            %li
+              %a{:href => '#', 'ng-click' => 'main.setCurrent(1)'} Home
+            %li
+              %a{:href => '#', 'ng-click' => 'main.setCurrent(2)'} About us
+            %li
+              %a{:href => '#', 'ng-click' => 'main.setCurrent(3)'} Products and Services
+            %li
+              %a{:href => '#', 'ng-click' => 'main.setCurrent(4)'} Literature
+            %li
+              %a{:href => '#', 'ng-click' => 'main.setCurrent(5)'} Contact Us
+
+        %h1{:class => 'header'} Crown Dental Laboratory
+
+        %home-page{'ng-show' => 'main.isCurrent(1)'}
+        %about-us{'ng-show' => 'main.isCurrent(2)'}
+

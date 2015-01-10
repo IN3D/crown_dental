@@ -1,0 +1,5 @@
+# ignore vim swap files
+*.*.swp
+
+# ignore codekit config file
+config.codekit

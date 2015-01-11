@@ -7,3 +7,7 @@ app.directive 'homePage', ->
 app.directive 'aboutUs', ->
   restrict: 'E',
   templateUrl: 'about-us.html'
+
+app.directive 'productsAndServices', ->
+  restrict: 'E',
+  templateUrl: 'products-and-services.html'

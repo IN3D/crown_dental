@@ -1,5 +1,9 @@
 # ignore vim swap files
+.*.*.swp
 *.*.swp
+*.swp
+*.swo
+*~
 
 # ignore codekit config file
 config.codekit

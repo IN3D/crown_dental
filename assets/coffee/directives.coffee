@@ -11,3 +11,7 @@ app.directive 'aboutUs', ->
 app.directive 'productsAndServices', ->
   restrict: 'E',
   templateUrl: 'products-and-services.html'
+
+app.directive 'literature', ->
+    restrict: 'E',
+    templateUrl: 'literature.html'
